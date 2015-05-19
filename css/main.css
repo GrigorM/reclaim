@@ -128,7 +128,7 @@ border: 0px solid transparent;
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-	background-color: #16a085;
+	background-color: #3498DB;
 	color: white;
 }
 
@@ -270,7 +270,8 @@ a:after {
    Wrap Sections
    ========================================================================== */
 
-#headerwrap {	
+#headerwrap {
+	background: url(../img/header_bg.jpg) no-repeat center top;
 	margin-top: -50px;
 	padding-top:120px;
 	text-align:center;
@@ -407,6 +408,32 @@ a:after {
 	font-size: 25px;
 }
 
+
+/* Section Dividers Backgrounds */
+
+.divider1 {
+	background-image: url('../img/bg/divider1.jpg')
+}
+
+.divider2 {
+	background-image: url('../img/bg/divider2.jpg')
+}
+
+.divider3 {
+	background-image: url('../img/bg/divider3.jpg');
+	margin-top: 0px;
+}
+
+.divider4 {
+	background-image: url('../img/bg/divider4.jpg')
+}
+
+.divider6 {
+	background-image: url('../img/bg/divider6.jpg')
+}
+
+
+
 /* ==========================================================================
    Services Section
    ========================================================================== */
@@ -513,7 +540,7 @@ a:after {
 	transition: transform 0.4s;
 }
 
-.mask figure:hover img,
+.no-touch .mask figure:hover img,
 .mask figure.cs-hover img {
 	-webkit-transform: translateY(-30px);
 	-moz-transform: translateY(-30px);
@@ -536,7 +563,7 @@ a:after {
 	transition: transform 0.4s, opacity 0.1s 0.3s;
 }
 
-.mask figure:hover figcaption,
+.no-touch .mask figure:hover figcaption,
 .mask figure.cs-hover figcaption {
 	opacity: 1;
 	-webkit-transform: translateY(0px);
@@ -607,4 +634,8 @@ a:after {
 		line-height: 38px;
 	}
 }
+
+/*********stile te shtuara nga une, Grigor Malo ******************/
+.fac { font-size: 23px; margin: 0 7px; }
+
 
