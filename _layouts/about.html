@@ -4,13 +4,12 @@
   {% include head.html %}
 
   <body>
-
-    {% include header.html %}
-
+	{% include topmenu.html %}
+	<div class="wrapper">
     <!-- content start -->
 
-    <div class="page-content">
-      <div class="wrapper">
+    <div class="row">
+      <div class="col-sm-12">
         {{ content }}
       </div>
     </div>
@@ -19,6 +18,7 @@
 
     {% include footer.html %}
     {% include js.html %}
+	</div>
 
   </body>
 

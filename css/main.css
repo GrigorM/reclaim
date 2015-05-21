@@ -24,6 +24,7 @@ textarea {
 body {
     font-size: 1em;
     line-height: 1.4;
+	background-color: #dadada;
 }
 
 /*
@@ -637,5 +638,6 @@ a:after {
 
 /*********stile te shtuara nga une, Grigor Malo ******************/
 .fac { font-size: 23px; margin: 0 7px; }
+.wrapper { min-height:100%; }
 
 
