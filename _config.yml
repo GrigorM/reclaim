@@ -24,11 +24,11 @@ permalink: pretty
 social:
   - title: twitter
     url: https://twitter.com/grigormalo
-	icon: twitter
+icon: twitter
   - title: github
     url: https://github.com/GrigorM
-	icon: github
+icon: github
   - title: mail
     url: mailto:grigormalo@gmail.com
-	icon: envelope
+icon: envelope
 	
