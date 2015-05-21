@@ -23,13 +23,13 @@ permalink: pretty
 
 social:
   - icon: twitter
-  title: twitter
+    title: twitter
     url: https://twitter.com/grigormalo
 
   - title: github
     url: https://github.com/GrigorM
-icon: github
+    icon: github
   - title: mail
     url: mailto:grigormalo@gmail.com
-icon: envelope
+    icon: envelope
 	
