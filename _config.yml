@@ -1,22 +1,9 @@
-	
-# ----------------------- #
-#      Main Configs       #
-# ----------------------- #	
 --- 
 author: "Grigor Malo"
 description: "Technology, creative coding, politics, philosophy, blogging, all sort of keywords to trick f***ing Google.\"\n"
 email: grigormalo@gmail.com
-# ----------------------- #
-#    Jekyll & Plugins     #
-# ----------------------- #
-
-# Build settings
 markdown: kramdown
 permalink: pretty
-
-# ----------------------- #
-#   3rd Party Settings    #
-# ----------------------- #
 social: 
   - 
     icon: twitter
@@ -32,5 +19,3 @@ social:
     url: "mailto:grigormalo@gmail.com"
 title: Disinnovate
 url: grigorm.github.io/reclaim/
-	
-	
