@@ -34,14 +34,14 @@ body {
  */
 
 ::-moz-selection {
-    background: #f2c2c9;
-    color: #a4003a;
+    background: #3498DB;
+    color: #fff;
     text-shadow: none;
 }
 
 ::selection {
-    background: #16a085;
-    color: #a4003a;
+    background: #3498DB;
+    color: #fff;
     text-shadow: none;
 }
 
@@ -118,7 +118,7 @@ margin-left: -15px;
 
 .navbar-default {
 border-color: transparent;
-background-color: #dadada;
+background-color: #b7b7b7;
 }
 
 
@@ -160,7 +160,7 @@ a img {
 
 /* Titles */
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Raleway";
+    font-family: "Lato"; /*"Raleway";*/
     font-weight: 300;
     color: #333;
 }
@@ -638,6 +638,7 @@ a:after {
 
 /*********stile te shtuara nga une, Grigor Malo ******************/
 .fac { font-size: 23px; margin: 0 7px; }
-.wrapper { min-height:100%; }
+.wrapper { min-height:100%; position: relative;}
+.customDiv { width: 100%; text-align:center; font-size:33px;}
 
 
