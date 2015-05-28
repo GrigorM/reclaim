@@ -25,8 +25,8 @@ function draw() {
 }
 
 function Rect() {
-	this.width = random(100);
-	this.height = this.width;
+	this.w = random(100);
+	this.h = this.w;
 	this.x = random(width);
 	this.y = random(height);
 	this.opacity = random(100, 175);
@@ -40,7 +40,7 @@ function Rect() {
 		push();
 		translate(this.x, this.y);
 		rotate(this.rot)
-		rect(0, 0, this.width, this.height);
+		rect(0, 0, this.w, this.h);
 		pop();
 		//alert('lalalalala');
 		this.opacity-= this.dieRate;
