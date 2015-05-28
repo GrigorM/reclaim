@@ -505,7 +505,7 @@ a:after {
 	left: 0;
 	padding: 20px;
 	color: #fff;
-	background: #3498db;
+	background: #b7b7b7;
 }
 
 .grid figcaption h5 {
@@ -513,7 +513,7 @@ a:after {
 	padding-top: 0px;
 	padding-left: 20px;
 	padding-bottom: 5px;
-	color: #fff;
+	color: #777;
 	font-weight: 700;
 	text-align: left;
 	letter-spacing: 2px;
@@ -528,6 +528,12 @@ a:after {
 	background: #2f2f2f;
 	color: #fff;
 	font-size: 13px;
+	border-color: #000;
+}
+
+.grid figcaption a {
+	color: #555;
+	background-color:#fff;
 }
 
 /* Caption Style */
@@ -643,5 +649,5 @@ a:after {
 #about {margin-bottom:55px;}
 .lefty { float: left; }
 .fix-alignment { margin-left:15px; }
-#about_animation_block { }
+.gray { color: #b7b7b7; } 
 
