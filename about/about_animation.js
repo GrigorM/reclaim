@@ -25,7 +25,7 @@ function draw() {
 }
 
 function Rect() {
-	this.w = random(100);
+	this.w = random(200);
 	this.h = this.w;
 	this.x = random(width);
 	this.y = random(height);
@@ -45,10 +45,10 @@ function Rect() {
 		//alert('lalalalala');
 		this.opacity-= this.dieRate;
 		if(this.opacity < -10){
-			this.width = random(100);
-			this.height = this.width;
-			this.width = random(width);
-			this.height = random(height);
+			this.w = random(200);
+			this.h = this.w;
+			this.x = random(width);
+			this.y = random(height);
 			this.opacity = random(100, 175);	
 			this.rot = random(TWO_PI);			
 		}
