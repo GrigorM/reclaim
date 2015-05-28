@@ -85,7 +85,7 @@ body {
 }
 
 body {
-    font-family: "Lato";
+    font-family: consolas; /*"Lato";*/
     font-weight: 300;
     font-size: 16px;
     color: #555;
@@ -592,7 +592,7 @@ a:after {
 	background: #2b2b2b;
 	padding-right: 0px;
 	padding-left: 0px;
-	
+	margin-left:15px;
 }
 
 .blog-bg h4 {
@@ -641,5 +641,6 @@ a:after {
 .wrapper { min-height:100%; position: relative; display:block;}
 .customDiv { width: 100%; text-align:center; font-size:33px;}
 #about {margin-bottom:55px;}
+.lefty-menu {float: left;}
 
 
