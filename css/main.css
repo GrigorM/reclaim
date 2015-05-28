@@ -655,5 +655,6 @@ a:after {
 .lefty { float: left; }
 .fix-alignment { margin-left:15px; }
 .gray { color: #b7b7b7; } 
-a.icon-link, footer a { color: fff; }
+a.w, footer a { color: #fff; }
+.blog a, a.icon { color: #2f2f2f; }
 
