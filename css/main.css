@@ -642,5 +642,6 @@ a:after {
 .customDiv { width: 100%; text-align:center; font-size:33px;}
 #about {margin-bottom:55px;}
 .lefty-menu {float: left;}
+.lefty { float: left; }
 
 
