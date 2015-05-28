@@ -3,7 +3,8 @@ var canvas;
 function setup() {
   // put setup code here
   canvas = createCanvas(screen.width/2, screen.height-200);
-  canvas.position(screen.width/2, 0);
+  //canvas.position(screen.width/2, 0);
+  canvas.parent('about_animation_block');
   background(255);
   //div = createDiv("Testing, testing, 1 2 3");
   //div.position();

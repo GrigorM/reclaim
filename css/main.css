@@ -160,7 +160,7 @@ a img {
 
 /* Titles */
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Lato"; /*"Raleway";*/
+    font-family: consolas;/*"Lato"; "Raleway";*/
     font-weight: 300;
     color: #333;
 }
@@ -643,4 +643,5 @@ a:after {
 #about {margin-bottom:55px;}
 .lefty { float: left; }
 .fix-alignment { margin-left:15px; }
+#about_animation_block { }
 
