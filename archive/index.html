@@ -3,6 +3,18 @@ layout: blog-archive
 title: Disinnovate
 subTitle: Innovation is now an empty signifier.
 ---
+{% for post in site.posts %}
+    <div class="article article-{{post.category}}">
+        <h1>{{post.title}}</h1>
+        {{post.excerpt}}
+        <a href="{{post.url}}">More</a>
+    </div>
+{% endfor %}
+
+
 {% for category in site.categories %}
     <span class="category-link">{{category}}</span><br/>
 {% endfor %}
+<script>
+	$('.category-link > p').hide();
+</script>
