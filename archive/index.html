@@ -3,20 +3,23 @@ layout: blog-archive
 title: Disinnovate
 subTitle: Innovation is now an empty signifier.
 ---
+
 <br/>
 <br/>
 <h2 class="left fix-alignment">ARKIVA <span class="gray"> ______________</span></h2>
 <br/>
-<h3>Kategoritë</h3>
-{% for category in site.categories %}
-    <span class="category-link">{{category}}</span>&nbsp;&nbsp;&nbsp;
-{% endfor %}
-<br/>
-{% for post in site.posts %}
-    <div class="article article-{{post.category}}">
-        <h1>{{post.title}}</h1>
-        {{post.excerpt}}
-        <a href="{{post.url}}">More</a>
-    </div>
-{% endfor %}
-
+<div class="col-sm-12" id="blog">	
+	<h3>Kategoritë</h3>
+	<span id="all">të gjitha</span>&nbsp;&nbsp;&nbsp;
+	{% for category in site.categories %}
+		<span class="category-link">{{category}}</span>&nbsp;&nbsp;&nbsp;
+	{% endfor %}
+	<br/>
+	{% for post in site.posts %}
+		<div class="article article-{{post.category}}">
+			<h1><a href="{{post.url}}">{{post.title}}</a></h1>
+			{{post.excerpt}}
+			<a href="{{post.url}}">Lexo <i class="fa fa-long-arrow-right"></i></a>
+		</div>
+	{% endfor %}
+</div>

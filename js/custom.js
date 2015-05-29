@@ -6,4 +6,7 @@ $(document).ready(function(){
 		$(".article").hide();
 		$(".article-" + $(this).html()).show();
 	});
+	$('#all').click(function(){
+		$(".article").show();
+	});
 });
