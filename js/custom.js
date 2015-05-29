@@ -1,6 +1,6 @@
 //custom jquery and javascript
 $(document).ready(function(){
-	$('.category-link > p').hide();
+	$('.category-link > p').remove();
 	
 	$(".category-link").click(function(e) {
 		$(".article").hide();
