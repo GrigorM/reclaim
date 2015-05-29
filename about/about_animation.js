@@ -3,7 +3,11 @@ var rects = [];
 var canvas;
 function setup() {
   // put setup code here
-  canvas = createCanvas(screen.width/2, screen.height-200);
+  if(screen.width<600){
+	canvas = createCanvas(screen.width, screen.height-200);
+  }else{
+	canvas = createCanvas(screen.width/2, screen.height-200);
+  }
   //canvas.position(screen.width/2, 0);
   canvas.parent('about_animation_block');
   background(255);
@@ -13,6 +17,8 @@ function setup() {
   for(var i=0; i<13; i++){
 	rects[i] = new Rect();
   }
+  //canvas.style("width: 100%;");
+  alert(canvas.width);
 }
 
 function draw() {

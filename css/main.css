@@ -530,15 +530,16 @@ a:after {
 	padding: 5px 10px;
 	margin-left: 20px;
 	display: inline-block;
-	background: #2f2f2f;
-	color: #fff;
+	background: #fff;
+	color: #555;
 	font-size: 13px;
 	border-color: #000;
 }
 
-.grid figcaption a {
-	color: #555;
-	background-color:#fff;
+.grid figcaption a:hover {
+	color: #fff;
+	background-color:#2f2f2f;
+  border-color: #000;
 }
 
 /* Caption Style */
