@@ -1,5 +1,8 @@
 ---
-layout: default
+layout: blog-archive
 title: Disinnovate
 subTitle: Innovation is now an empty signifier.
 ---
+{% for category in site.categories %}
+    <span class="category-link">{{category}}</span><br/>
+{% endfor %}

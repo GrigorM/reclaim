@@ -17,8 +17,6 @@ function setup() {
   for(var i=0; i<13; i++){
 	rects[i] = new Rect();
   }
-  //canvas.style("width: 100%;");
-  alert(canvas.width);
 }
 
 function draw() {
