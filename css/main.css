@@ -536,10 +536,10 @@ a:after {
 	border-color: #000;
 }
 
-.grid figcaption a:hover {
+.grid figcaption a:hover, .grid figcaption a:focus, .grid figcaption a:active {
 	color: #fff;
 	background-color:#2f2f2f;
-  border-color: #000;
+	border-color: #000;
 }
 
 /* Caption Style */
