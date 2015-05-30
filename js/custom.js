@@ -10,6 +10,6 @@ $(document).ready(function(){
 		$(".article").show();
 	});
 	
-	$('#twitterfeed').style('width: 100%');
+	$('#twitterfeed iframe').css('width','100%');
 	
 });
