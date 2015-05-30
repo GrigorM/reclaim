@@ -34,6 +34,7 @@ function Rect() {
 	this.x = random(width);
 	this.y = random(height);
 	this.opacity = random(150, 225);
+	this.strWeight = int(random(1, 4));
 	this.rot = random(TWO_PI);
 	this.dieRate = int(random(1, 5));
 	rectMode(CENTER);
@@ -43,8 +44,8 @@ function Rect() {
 		stroke(0, this.opacity);
 		push();
 		translate(this.x, this.y);
-		rotate(this.rot);
-		strokeWeight(int(random(1, 3)));
+		rotate(this.rot);		
+		strokeWeight(this.strWeight);
 		rect(0, 0, this.w, this.h);
 		pop();
 		//alert('lalalalala');
