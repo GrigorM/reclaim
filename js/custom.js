@@ -9,4 +9,7 @@ $(document).ready(function(){
 	$('#all').click(function(){
 		$(".article").show();
 	});
+	
+	$('#twitterfeed').style('width: 100%');
+	
 });
