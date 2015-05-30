@@ -1,11 +1,15 @@
----
----
 <!DOCTYPE html>
 <html>
   {% include head.html %}
   <body itemscope itemtype="http://schema.org/Article">
-    {% include header.html %}
-	<h3>Hello hello, testing these blogposts. So mad i can't test it locally, but I'll deal with it somehow.</h3>
+    {% include topmenu.html %}
+	<div class="container lefty">
+		<br/>
+		<br/>
+		<h2 class="post-title">{{ page.title }}</h2>
+		<br/>
+		{{ content }}
+	</div>
 	{% include footer.html %}
     {% include js.html %}
   </body>

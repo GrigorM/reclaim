@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	{% include head.html %}
+	<body>
+		<div class="wrapper">
+			{% include topmenu.html %}
+			<div class="row">
+				<div class="lefty">
+				  <div class="col-sm-12">
+					{{ content }}
+				  </div>
+				</div>
+				
+			</div>
+			{% include footer.html %}
+			{% include js.html %}
+		</div>
+	</body>
+</html>

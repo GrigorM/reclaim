@@ -6,14 +6,17 @@
   <body>
 	<div class="wrapper">
 	{% include topmenu.html %}
-	{% include about_animation.html %}
     <!-- content start -->
-
-    <div class="row">
-      <div class="col-sm-12">
-        {{ content }}
-      </div>
-    </div>
+	
+	<div class="row">
+		<div class="lefty">
+		  <div class="col-sm-6">
+			{{ content }}
+		  </div>
+		  {% include about_animation.html %}
+		</div>
+		
+	</div>
 
     <!-- content end -->
 
