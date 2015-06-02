@@ -4,11 +4,11 @@
 	<body>
 		<main class="wrapper">
 			{% include topmenu.html %}
-				  <section class="row col-lg-12 col-md-12 col-sm-12 col-xs-12 lefty">
-					{{ content }}
-				  </section>
-			{% include footer.html %}
-			{% include js.html %}
+			<div class="row">	
+				{{ content }}
+				{% include footer.html %}
+				{% include js.html %}
+			</div>
 		</main>
 	</body>
 </html>
