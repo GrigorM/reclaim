@@ -2,9 +2,9 @@
 <html>
 	{% include head.html %}
 	<body>
-		{% include topmenu.html %}
 		<main class="wrapper">
-				  <section class="col-lg-12 col-md-12 col-sm-12 col-xs-12 lefty">
+			{% include topmenu.html %}
+				  <section class="row col-lg-12 col-md-12 col-sm-12 col-xs-12 lefty">
 					{{ content }}
 				  </section>
 			{% include footer.html %}
