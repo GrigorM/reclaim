@@ -534,6 +534,7 @@ a:after {
 	color: #555;
 	font-size: 13px;
 	border-color: #000;
+	border-radius: 0;
 }
 
 .grid figcaption a:hover, .grid figcaption a:focus, .grid figcaption a:active {
