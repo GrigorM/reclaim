@@ -12,7 +12,7 @@ subTitle: Innovation is now an empty signifier.
 	<h3>Kategoritë</h3>
 	<span id="all">të gjitha</span>&nbsp;&nbsp;&nbsp;
 	{% for category in site.categories %}
-		<span class=""><em>{{category}}</em></span>&nbsp;&nbsp;&nbsp;
+		<span class="category-link">{{category}}</span>&nbsp;&nbsp;&nbsp;
 	{% endfor %}
 	<br/>
 	{% for post in site.posts %}

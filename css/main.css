@@ -668,7 +668,7 @@ a.w:active, footer a:active { color: #777777; }
 #blog a:focus, a.icon:focus { color: #b7b7b7; }
 #blog a:active, a.icon:active { color: #b7b7b7; }
 
-span#all, span.category-link {cursor:pointer;}
+span#all, span.category-link {cursor:pointer;font-style: italic;}
 span#all:hover, span.category-link:hover { text-decoration:underline; color: #b7b7b7; }
 .formal-heading { margin-top:0; }
 .fit-image { width:100%; }
