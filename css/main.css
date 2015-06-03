@@ -670,6 +670,6 @@ a.w:active, footer a:active { color: #777777; }
 
 span#all, span.category-link {cursor:pointer;font-style: italic;}
 span#all:hover, span.category-link:hover { text-decoration:underline; color: #b7b7b7; }
-.formal-heading { position: absolute !important;clip: rect(1px, 1px, 1px, 1px);overflow: hidden; }
+.formal-heading { position: absolute !important;clip: rect(1px, 1px, 1px, 1px);overflow: hidden;}
 .fit-image { width:100%; }
 

@@ -4,25 +4,21 @@
   {% include head.html %}
 
   <body>
-	<div class="wrapper">
+	<h1 class="formal-heading">{{ page.title }}</h1>
+	<main class="wrapper">
 	{% include topmenu.html %}
     <!-- content start -->
 	
 	<div class="row">
-		<div class="lefty">
-		  <div class="col-sm-6">
-			{{ content }}
-		  </div>
-		  {% include about_animation.html %}
-		</div>
-		
+		{{ content }}
+		{% include about_animation.html %}		
 	</div>
 
     <!-- content end -->
 
     {% include footer.html %}
     {% include js.html %}
-	</div>
+	</main>
 
   </body>
 
