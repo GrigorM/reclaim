@@ -85,7 +85,7 @@ body {
 }
 
 body {
-    font-family: consolas; /*"Lato";*/
+    font-family: 'Clear Sans Light', consolas; /*"Lato";*/
     font-weight: 300;
     font-size: 16px;
     color: #555;
@@ -165,7 +165,7 @@ a img {
 
 /* Titles */
 h1, h2, h3, h4, h5, h6 {
-    font-family: consolas;/*"Lato"; "Raleway";*/
+    font-family: 'Clear Sans', consolas;/*"Lato"; "Raleway";*/
     font-weight: 300;
     color: #333;
 }
@@ -672,4 +672,6 @@ span#all, span.category-link {cursor:pointer;font-style: italic;}
 span#all:hover, span.category-link:hover { text-decoration:underline; color: #b7b7b7; }
 .formal-heading { position: absolute !important;clip: rect(1px, 1px, 1px, 1px);overflow: hidden;}
 .fit-image { width:100%; }
+@font-face{font-family:'Clear Sans Light';src:url(/reclaim/fonts/clearsans-light.eot);src:url(/reclaim/fonts/clearsans-light.eot?#iefix) format("embedded-opentype"),url(/reclaim/fonts/clearsans-light.ttf) format("truetype"),url(/reclaim/fonts/clearsans-light.woff) format("woff"),url(/reclaim/fonts/clearsans-light.svg#ClearSans-Light) format("svg");font-style:normal;font-weight:lighter;}
+@font-face{font-family:'Clear Sans';src:url(/reclaim/fonts/clearsans-regular.eot);src:url(/reclaim/fonts/clearsans-regular.eot?#iefix) format("embedded-opentype"),url(/reclaim/fonts/clearsans-regular.ttf) format("truetype"),url(/reclaim/fonts/clearsans-regular.woff) format("woff"),url(/reclaim/fonts/clearsans-regular.svg#ClearSans-Regular) format("svg");font-style:normal;font-weight:normal;}
 
