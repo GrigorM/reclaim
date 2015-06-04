@@ -21,14 +21,14 @@ subTitle: Kush, çfarë, pse?
 		web developer</span>. Mund të vetëpërshkruhem si teknoskeptik dhe i majtë radikal. I interesuar rreth web-it, kodimit kreativ, vizualizimeve, politikës, kritikës shoqërore dhe teknologjike dhe
 		muzikës. 
 		<br/><br/>
-		Mënyra kontaktimi: <br/>
+		Mënyra kontaktimi: <br/><br/>
 		<!--<a href="https://twitter.com/grigormalo" target="_blank"><span itemprop="url">Twitter</span></a><br/>
 		<a href="https://github.com/GrigorM" target="_blank"><span itemprop="url">Github</span></a><br/>
 		<a href="https://www.facebook.com/grigor.komunisti" target="_blank"><span itemprop="url">Facebook</span></a><br/>
 		<a href="mailto:grigormalo@gmail.com" target="_blank"><span itemprop="url">Email</span></a><br/>
 		<a href="https://grigormalo.withknown.com/" target="_blank"><span itemprop="url">Known</span></a><br/>-->
 		{% for social in site.social %}
-			<a href="{{ social.url }}" class="w"><i class="fa fa-{{ social.icon }} fac"></i> <span class="network-name">{{ social.title }}</span></a>
+			<a href="{{ social.url }}" class="w"><i class="fa fa-{{ social.icon }} fac"></i> <span>{{ social.title }}</span></a>
 		{% endfor %}		
 		</p>
 	</div><br/>

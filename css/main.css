@@ -659,9 +659,11 @@ a:after {
 .gray { color: #b7b7b7; } 
 
 a.w, footer a { color: #fff; }
-a.w:hover, footer a:hover { color: #27A102; }
-a.w:focus, footer a:focus { color: #27A102; }
-a.w:active, footer a:active { color: #27A102; }
+a span { color:#777; }
+a.w:hover, footer a:hover a span{ color: #27A102; }
+a.w:focus, footer a:focus a span{ color: #27A102; }
+a.w:active, footer a:active a span{ color: #27A102; }
+
 
 #blog a, a.icon { color: #2f2f2f; }
 #blog a:hover, a.icon:hover { color: #b7b7b7; }
@@ -672,6 +674,8 @@ span#all, span.category-link {cursor:pointer;font-style: italic;}
 span#all:hover, span.category-link:hover { text-decoration:underline; color: #b7b7b7; }
 .formal-heading { position: absolute !important;clip: rect(1px, 1px, 1px, 1px);overflow: hidden;}
 .fit-image { width:100%; }
+.soc { color: #777; }
+
 @font-face{font-family:'Clear Sans Light';src:url(/reclaim/fonts/clearsans-light.eot);src:url(/reclaim/fonts/clearsans-light.eot?#iefix) format("embedded-opentype"),url(/reclaim/fonts/clearsans-light.ttf) format("truetype"),url(/reclaim/fonts/clearsans-light.woff) format("woff"),url(/reclaim/fonts/clearsans-light.svg#ClearSans-Light) format("svg");font-style:normal;font-weight:lighter;}
 @font-face{font-family:'Clear Sans';src:url(/reclaim/fonts/clearsans-regular.eot);src:url(/reclaim/fonts/clearsans-regular.eot?#iefix) format("embedded-opentype"),url(/reclaim/fonts/clearsans-regular.ttf) format("truetype"),url(/reclaim/fonts/clearsans-regular.woff) format("woff"),url(/reclaim/fonts/clearsans-regular.svg#ClearSans-Regular) format("svg");font-style:normal;font-weight:normal;}
 
