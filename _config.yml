@@ -18,5 +18,9 @@ social:
     icon: envelope
     title: mail
     url: "mailto:grigormalo@gmail.com"
+  - 
+    icon: facebook
+    title: facebook
+    url: "https://facebook.com/grigor.komunisti"	
 title: Disinnovate
 url: grigorm.github.io/reclaim/

@@ -244,7 +244,7 @@ blockquote cite:before {
 
 /* Links */
 a {
-    color: #3498db;
+    color: #aaa; /*#3498db;*/
     word-wrap: break-word;
 
     -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
@@ -256,7 +256,7 @@ a {
 
 a:hover,
 a:focus {
-    color: #c0392b;
+    color: #27A102;
     text-decoration: none;
     outline: 0;
 }
@@ -659,9 +659,9 @@ a:after {
 .gray { color: #b7b7b7; } 
 
 a.w, footer a { color: #fff; }
-a.w:hover, footer a:hover { color: #777777; }
-a.w:focus, footer a:focus { color: #777777; }
-a.w:active, footer a:active { color: #777777; }
+a.w:hover, footer a:hover { color: #27A102; }
+a.w:focus, footer a:focus { color: #27A102; }
+a.w:active, footer a:active { color: #27A102; }
 
 #blog a, a.icon { color: #2f2f2f; }
 #blog a:hover, a.icon:hover { color: #b7b7b7; }
