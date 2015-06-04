@@ -4,7 +4,7 @@ title: Disinnovate
 subTitle: Innovation is now an empty signifier.
 ---
 <script>
-var canvas;
+var canvas, nav, title;
 
 function setup(){
 	canvas = createCanvas(window.innerWidth, window.innerHeight);
@@ -12,12 +12,12 @@ function setup(){
 	navigation();
 }
 function createTitle(){
-	var t = createDiv("DISINNOVATE");
-	t.class("center-title");
-	t.style('top', window.innerHeight/3);
+	title = createDiv("DISINNOVATE");
+	title.class("center-title");
+	title.style('top', window.innerHeight/3);
 }
 function navigation(){
-	var nav = createElement('nav');
+	nav = createElement('nav');
 	nav.id('menu');
 	nav.class('navigation');
 	nav.style('top', window.innerHeight/3 + 70);
