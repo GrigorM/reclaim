@@ -680,6 +680,6 @@ span#all:hover, span.category-link:hover { text-decoration:underline; color: #b7
 @font-face{font-family:'Clear Sans';src:url(/reclaim/fonts/clearsans-regular.eot);src:url(/reclaim/fonts/clearsans-regular.eot?#iefix) format("embedded-opentype"),url(/reclaim/fonts/clearsans-regular.ttf) format("truetype"),url(/reclaim/fonts/clearsans-regular.woff) format("woff"),url(/reclaim/fonts/clearsans-regular.svg#ClearSans-Regular) format("svg");font-style:normal;font-weight:normal;}
 
 /**********front page canvas******************/
-.center { font-size:49px; font-family:'Clear Sans Light', consolas; width:100%; text-align:center; position: absolute; }
+.center-title { font-size:49px; font-family:'Clear Sans Light', consolas; width:100%; text-align:center; position: absolute; }
 .navigation { font-size:23px; font-family:'Clear Sans Light', consolas; width:100%; text-align:center; position: absolute; }
 .navigation a{ margin: 0 10px; }
