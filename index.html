@@ -14,13 +14,15 @@ function setup(){
 function createTitle(){
 	title = createDiv("DISINNOVATE");
 	title.class("center-title");
-	title.style('top', window.innerHeight/3);
+	//title.style('top', window.innerHeight/3);
+	title.position(0, window.innerHeight/3);
 }
 function navigation(){
 	nav = createElement('nav');
 	nav.id('menu');
 	nav.class('navigation');
-	nav.style('top', window.innerHeight/3 + 70);
+	//nav.style('top', window.innerHeight/3 + 70);
+	nav.position(0, window.innerHeight/3 + 70);
 	var projects = createA('/reclaim/projects', 'projekte', '_blank');
 	projects.parent('menu');
 	var blog = createA('/reclaim/archive', 'blog', '_blank');
