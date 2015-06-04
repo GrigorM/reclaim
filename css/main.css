@@ -659,10 +659,10 @@ a:after {
 .gray { color: #b7b7b7; } 
 
 a.w, footer a { color: #fff; }
-a span { color:#777; }
-a.w:hover, footer a:hover a span{ color: #27A102; }
-a.w:focus, footer a:focus a span{ color: #27A102; }
-a.w:active, footer a:active a span{ color: #27A102; }
+a.soc { color: #777; }
+a.w:hover, footer a:hover, a.soc{ color: #27A102; }
+a.w:focus, footer a:focus, a.soc{ color: #27A102; }
+a.w:active, footer a:active, a.soc{ color: #27A102; }
 
 
 #blog a, a.icon { color: #2f2f2f; }
@@ -679,3 +679,7 @@ span#all:hover, span.category-link:hover { text-decoration:underline; color: #b7
 @font-face{font-family:'Clear Sans Light';src:url(/reclaim/fonts/clearsans-light.eot);src:url(/reclaim/fonts/clearsans-light.eot?#iefix) format("embedded-opentype"),url(/reclaim/fonts/clearsans-light.ttf) format("truetype"),url(/reclaim/fonts/clearsans-light.woff) format("woff"),url(/reclaim/fonts/clearsans-light.svg#ClearSans-Light) format("svg");font-style:normal;font-weight:lighter;}
 @font-face{font-family:'Clear Sans';src:url(/reclaim/fonts/clearsans-regular.eot);src:url(/reclaim/fonts/clearsans-regular.eot?#iefix) format("embedded-opentype"),url(/reclaim/fonts/clearsans-regular.ttf) format("truetype"),url(/reclaim/fonts/clearsans-regular.woff) format("woff"),url(/reclaim/fonts/clearsans-regular.svg#ClearSans-Regular) format("svg");font-style:normal;font-weight:normal;}
 
+/**********front page canvas******************/
+.center { font-size:49px; font-family:'Clear Sans Light', consolas; width:100%; text-align:center; position: absolute; }
+.navigation { font-size:23px; font-family:'Clear Sans Light', consolas; width:100%; text-align:center; position: absolute; }
+.navigation a{ margin: 0 10px; }

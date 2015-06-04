@@ -3,3 +3,54 @@ layout: default
 title: Disinnovate
 subTitle: Innovation is now an empty signifier.
 ---
+<script>
+var canvas;
+
+function setup(){
+	canvas = createCanvas(window.innerWidth, window.innerHeight);
+	createTitle();
+	navigation();
+}
+function createTitle(){
+	var t = createDiv("DISINNOVATE");
+	t.class("center-title");
+	t.style('top', window.innerHeight/3);
+}
+function navigation(){
+	var nav = createElement('nav');
+	nav.id('menu');
+	nav.class('navigation');
+	nav.style('top', window.innerHeight/3 + 70);
+	var projects = createA('/reclaim/projects', 'projekte', '_blank');
+	projects.parent('menu');
+	var blog = createA('/reclaim/archive', 'blog', '_blank');
+	blog.parent('menu');
+	var about = createA('/reclaim/about', 'about', '_blank');
+	about.parent('menu');	
+}
+
+function draw(){
+
+}
+
+function windowResized() {
+  resizeCanvas(window.innerWidth, window.innerHeight);
+}
+
+function Circles(){
+	
+}
+
+function Sines(){
+
+}
+
+function Rects(){
+
+}
+
+function Triangles(){
+
+}
+
+</script>
