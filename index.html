@@ -5,11 +5,14 @@ subTitle: Innovation is now an empty signifier.
 ---
 <script>
 var canvas, nav, title;
+var rectang, arcs;
 
 function setup(){
 	canvas = createCanvas(window.innerWidth, window.innerHeight);
 	createTitle();
 	navigation();
+	rectang = new Rects();
+	arcs = new Arcs();	
 }
 function createTitle(){
 	title = createDiv("DISINNOVATE");
@@ -23,16 +26,18 @@ function navigation(){
 	nav.class('navigation');
 	//nav.style('top', window.innerHeight/3 + 70);
 	nav.position(0, window.innerHeight/3 + 70);
-	var projects = createA('/reclaim/projects', 'projekte', '_blank');
+	var projects = createA('/reclaim/projects', 'projekte');
 	projects.parent('menu');
-	var blog = createA('/reclaim/archive', 'blog', '_blank');
+	var blog = createA('/reclaim/archive', 'blog');
 	blog.parent('menu');
-	var about = createA('/reclaim/about', 'about', '_blank');
+	var about = createA('/reclaim/about', 'about');
 	about.parent('menu');	
 }
 
 function draw(){
-
+	background(255);
+	rectang.be();
+	arcs.be();
 }
 
 function windowResized() {
@@ -47,9 +52,90 @@ function Sines(){
 
 }
 
+function Arcs(){
+	this.x = random(width);
+	this.y = random(height);
+	this.n = int(random(2, 5));
+	this.r0 = random(50, 79);
+	this.angles = [];
+	this.speeds = [];
+	this.life = random(100, 400);
+	this.op = 255;
+	
+	for(var i=0; i<this.n; i++){
+		this.angles[i] = random(TWO_PI);
+		if(random(1)>0.5) this.speeds[i] = random(0.02, 0.04);
+		else this.speeds[i] = random(-0.04, 0.02);
+	}
+	
+	this.be = function(){
+		if(this.op>3){
+			noFill();
+			stroke(0, this.op);
+			for(var i=0; i<this.n; i++){
+				push();
+				translate(this.x, this.y);
+				rotate(this.angles[i]);
+				arc(0, 0, this.r0+i*25, this.r0+i*25, 0, PI*1.1 );
+				this.angles[i] += this.speeds[i];
+				pop();
+			}
+		}
+		this.life--;
+		if(this.life<0){
+			this.fade();
+		}
+	}
+	
+	this.fade = function(){
+		this.op -= 5;
+		if(this.op<-150){
+			this.x = random(width);
+			this.y = random(height);
+			this.n = int(random(2, 5));
+			this.life = random(100, 400);
+			this.op = 255;			
+		}
+	}
+}
+
 function Rects(){
+	this.w = random(50, 125);
+	this.h = this.w;
+	this.x = random(width);
+	this.y = random(height);
+	this.angle = random(TWO_PI);
+	this.op = 255;
+	this.life = random(100, 400);
+	rectMode(CENTER);
+	
+	this.be = function(){
+		if(this.op>3){
+			push();
+			translate(this.x, this.y);
+			rotate(this.angle);
+			stroke(0, this.op);
+			rect(0, 0, this.w, this.h);
+			this.angle += 0.01;
+			pop();
+		}
+		this.life--;
+		if(this.life<0){
+			this.fade();
+		}
+	}
+	this.fade = function(){
+		this.op -= 5;
+		if(this.op<-150){
+			this.x = random(width);
+			this.y = random(height);
+			this.life = random(100, 400);
+			this.op = 255;			
+		}
+	}	
 
 }
+
 
 function Triangles(){
 
