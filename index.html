@@ -5,14 +5,21 @@ subTitle: Innovation is now an empty signifier.
 ---
 <script>
 var canvas, nav, title;
-var rectang, arcs;
+var rectang;
+var arcs = new Array(3);
+var sines = new Array(1);
 
 function setup(){
 	canvas = createCanvas(window.innerWidth, window.innerHeight);
 	createTitle();
 	navigation();
 	rectang = new Rects();
-	arcs = new Arcs();	
+	for(var i =0; i<arcs.length; i++){
+		arcs[i] = new Arcs();
+	}	
+	for(var j=0; j<sines.length; j++){
+		sines[j] = new Sines();
+	}	
 }
 function createTitle(){
 	title = createDiv("DISINNOVATE");
@@ -37,7 +44,12 @@ function navigation(){
 function draw(){
 	background(255);
 	rectang.be();
-	arcs.be();
+	for(var i=0; i<arcs.length; i++){
+		arcs[i].be();
+	}
+	for(var j=0; j<sines.length; j++){
+		sines[j].be();
+	}
 }
 
 function windowResized() {
@@ -49,23 +61,63 @@ function Circles(){
 }
 
 function Sines(){
+	this.x = random(50, width-50);
+	this.y = random(50, height-50);
+	this.num = int(random(1, 4));
+	this.lim = 0;
+	this.op = random(-150, -50);
+	this.rot = int(random(1, 5));
+	this.amp = (random(20, 50));
+	
+	this.be = function(){
+		push();
+		translate(this.x, this.y);
+		rotate(this.rot*PI/2);
+		stroke(0, this.op);
+		for(var n = 0; n<this.num; n++){
+			beginShape();
+			for(var i=0; i<this.lim; i++){
+				vertex(i, n*10 + this.amp*sin(i/(5*TWO_PI)));
+			}
+			endShape();
+		}
+		pop;
+		if(this.lim<(5*TWO_PI*TWO_PI + 10)){
+			this.lim+=7;
+		}else{
+			this.fade();
+		}
+	}
+	
+	this.fade = function(){
+		this.op -= 5;
+		if(this.op<-150){
+			this.x = random(10, width-50);
+			this.y = random(20, height-20);
+			this.num = int(random(1, 4));
+			this.amp = (random(20, 50));
+			this.lim = 0;
+			this.op = 255;	
+			this.rot = int(random(1, 5));	
+		}
+	}
 
 }
 
 function Arcs(){
-	this.x = random(width);
-	this.y = random(height);
+	this.x = random(30, width-30);
+	this.y = random(30, height-30);
 	this.n = int(random(2, 5));
 	this.r0 = random(50, 79);
 	this.angles = [];
 	this.speeds = [];
 	this.life = random(100, 400);
-	this.op = 255;
+	this.op = random(-150, -50);
 	
 	for(var i=0; i<this.n; i++){
 		this.angles[i] = random(TWO_PI);
-		if(random(1)>0.5) this.speeds[i] = random(0.02, 0.04);
-		else this.speeds[i] = random(-0.04, 0.02);
+		if(random(1)>0.5) this.speeds[i] = random(0.03, 0.05);
+		else this.speeds[i] = random(-0.05, -0.03);
 	}
 	
 	this.be = function(){
@@ -93,6 +145,11 @@ function Arcs(){
 			this.x = random(width);
 			this.y = random(height);
 			this.n = int(random(2, 5));
+			for(var i=0; i<this.n; i++){
+				this.angles[i] = random(TWO_PI);
+				if(random(1)>0.5) this.speeds[i] = random(0.03, 0.05);
+				else this.speeds[i] = random(-0.05, -0.03);
+			}			
 			this.life = random(100, 400);
 			this.op = 255;			
 		}
@@ -102,10 +159,10 @@ function Arcs(){
 function Rects(){
 	this.w = random(50, 125);
 	this.h = this.w;
-	this.x = random(width);
-	this.y = random(height);
+	this.x = random(30, width-30);
+	this.y = random(30, height-30);
 	this.angle = random(TWO_PI);
-	this.op = 255;
+	this.op = random(-150, -100);
 	this.life = random(100, 400);
 	rectMode(CENTER);
 	
@@ -116,7 +173,7 @@ function Rects(){
 			rotate(this.angle);
 			stroke(0, this.op);
 			rect(0, 0, this.w, this.h);
-			this.angle += 0.01;
+			this.angle += 0.02;
 			pop();
 		}
 		this.life--;
@@ -127,15 +184,14 @@ function Rects(){
 	this.fade = function(){
 		this.op -= 5;
 		if(this.op<-150){
-			this.x = random(width);
-			this.y = random(height);
+			this.x = random(30, width-30);
+			this.y = random(30, height-30);
 			this.life = random(100, 400);
 			this.op = 255;			
 		}
 	}	
 
 }
-
 
 function Triangles(){
 
