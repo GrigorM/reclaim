@@ -675,6 +675,8 @@ span#all:hover, span.category-link:hover { text-decoration:underline; color: #b7
 .formal-heading { position: absolute !important;clip: rect(1px, 1px, 1px, 1px);overflow: hidden;}
 .fit-image { width:100%; }
 .soc { color: #777; }
+.normal { margin-bottom: 7px; }
+.normal span { font-family:"Clear Sans"; text-decoration:"underline"; }
 
 @font-face{font-family:'Clear Sans Light';src:url(/reclaim/fonts/clearsans-light.eot);src:url(/reclaim/fonts/clearsans-light.eot?#iefix) format("embedded-opentype"),url(/reclaim/fonts/clearsans-light.ttf) format("truetype"),url(/reclaim/fonts/clearsans-light.woff) format("woff"),url(/reclaim/fonts/clearsans-light.svg#ClearSans-Light) format("svg");font-style:normal;font-weight:lighter;}
 @font-face{font-family:'Clear Sans';src:url(/reclaim/fonts/clearsans-regular.eot);src:url(/reclaim/fonts/clearsans-regular.eot?#iefix) format("embedded-opentype"),url(/reclaim/fonts/clearsans-regular.ttf) format("truetype"),url(/reclaim/fonts/clearsans-regular.woff) format("woff"),url(/reclaim/fonts/clearsans-regular.svg#ClearSans-Regular) format("svg");font-style:normal;font-weight:normal;}
