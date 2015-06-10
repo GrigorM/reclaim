@@ -68,6 +68,7 @@ function Sines(){
 	this.op = random(-150, -50);
 	this.rot = int(random(1, 5));
 	this.amp = (random(20, 50));
+	this.reborn = random(-200, -50);
 	
 	this.be = function(){
 		push();
@@ -91,7 +92,7 @@ function Sines(){
 	
 	this.fade = function(){
 		this.op -= 5;
-		if(this.op<-150){
+		if(this.op < this.reborn){
 			this.x = random(10, width-50);
 			this.y = random(20, height-20);
 			this.num = int(random(1, 4));
@@ -99,6 +100,7 @@ function Sines(){
 			this.lim = 0;
 			this.op = 255;	
 			this.rot = int(random(1, 5));	
+			this.reborn = random(-200, -50);
 		}
 	}
 
@@ -113,6 +115,7 @@ function Arcs(){
 	this.speeds = [];
 	this.life = random(100, 400);
 	this.op = random(-150, -50);
+	this.reborn = random(-200, -50);
 	
 	for(var i=0; i<this.n; i++){
 		this.angles[i] = random(TWO_PI);
@@ -141,7 +144,7 @@ function Arcs(){
 	
 	this.fade = function(){
 		this.op -= 5;
-		if(this.op<-150){
+		if(this.op < this.reborn){
 			this.x = random(width);
 			this.y = random(height);
 			this.n = int(random(2, 5));
@@ -151,7 +154,8 @@ function Arcs(){
 				else this.speeds[i] = random(-0.05, -0.03);
 			}			
 			this.life = random(100, 400);
-			this.op = 255;			
+			this.op = 255;	
+			this.reborn = random(-200, -50);
 		}
 	}
 }
@@ -164,6 +168,7 @@ function Rects(){
 	this.angle = random(TWO_PI);
 	this.op = random(-150, -100);
 	this.life = random(100, 400);
+	this.reborn = random(-200, -50);
 	rectMode(CENTER);
 	
 	this.be = function(){
@@ -183,11 +188,12 @@ function Rects(){
 	}
 	this.fade = function(){
 		this.op -= 5;
-		if(this.op<-150){
+		if(this.op < this.reborn){
 			this.x = random(30, width-30);
 			this.y = random(30, height-30);
 			this.life = random(100, 400);
-			this.op = 255;			
+			this.op = 255;		
+			this.reborn = random(-200, -50);
 		}
 	}	
 

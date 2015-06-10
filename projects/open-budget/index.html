@@ -16,9 +16,10 @@ subtitle: Innovation is now an empty signifier
 	<p class="normal"><span>Data e publikimit:</span> 12.05.2014</p>
 	<p class="normal"><span>Gjuhët:</span> Processing, Processing.js, Php, MySQL</p>
 	<p class="normal"><span>Projekti:</span> <a href="http://tablo-al.com/buxheti-i-hapur/" target="_blank">Ndiq linkun</a></p>
-	<p class="normal"><span>Kodi burim:</span> <a href="https://github.com/GrigorM/Buxheti-i-hapur--Open-budget" target="_blank">Ndiq linkun</a></p>
+	<p class="normal"><span>Kodi burim:</span> <a href="https://github.com/GrigorM/Buxheti-i-hapur--Open-budget" target="_blank">Ndiq linkun<i class="fa fa-github fac"></i></a></p>
 	<hr>
-	
+	<p class="normal"><span>Në vazhdim:</span> Rikonceptim i aplikacionit me d3.js</p>
+	<p class="normal">...</p>
 	</article>
 
 	<figure class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
@@ -28,7 +29,9 @@ subtitle: Innovation is now an empty signifier
 </section>
 <aside class="col-lg-3 col-md-3 col-sm-3 col-xs-12 category-sidebar">
 <h2>Postime rreth projektit</h2>
+<ul>
 {% for post in site.categories.buxheti %}
 	<li><a href="{{ post.url }}">{{ post.title }}</a></li>
 {% endfor %}
+</ul>
 </aside>
